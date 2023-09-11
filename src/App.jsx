@@ -6,11 +6,12 @@ import dataRaw from './util/data.json';
 
 function App() {
   const [count, setCount] = useState(0)
+
   dataRaw.sort((a,b)=>{
     return ((b['#ofSkillBadgesCompleted']+b['#ofCoursesCompleted']) - (a['#ofCoursesCompleted']+a['#ofSkillBadgesCompleted']));
   })
 
-  const data =dataRaw
+  const data = dataRaw;
 
   return (
     <div className='App' style={{
