@@ -1,13 +1,13 @@
 import csvToJson from 'convert-csv-to-json';
 import fs from 'fs';
 
-let fileInputName = '14sep.csv'
+let fileInputName = '15sep.csv'
 let fileOutputName = 'data.json'
 
 const res = csvToJson.fieldDelimiter(',').supportQuotedField(true).getJsonFromCsv(fileInputName);
 
 res.sort((a,b)=>{
-    return ((b['#ofSkillBadgesCompleted']+b['#ofCoursesCompleted']) - (a['#ofCoursesCompleted']+a['#ofSkillBadgesCompleted']));
+    return ((b['#ofSkillBadgesCompleted']+b['#ofCoursesCompleted'] + b['#ofGenAIGameCompleted']) - (a['#ofCoursesCompleted']+a['#ofSkillBadgesCompleted']+a['#ofGenAIGameCompleted']));
   })
 
 const jsonString = JSON.stringify(res)
