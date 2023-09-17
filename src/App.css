@@ -68,13 +68,15 @@ margin-top: -4rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: center;
   background-color: rgba(0,0,0,.5);
   width: 90vw;
-  height: calc(92*5rem);
+  height: calc(131*3.8rem);
   backdrop-filter: blur(20px);
   border: 0.15rem solid;
   border-color: #fff;
   border-radius: 4rem;
+  padding: 1.5rem;
 }
 
 .headerRow{
@@ -84,7 +86,9 @@ margin-top: -4rem;
   align-items: center;
   column-gap: 50px;
   color: #fff;
-  grid-template-columns: 9vw 27vw 9vw 9vw 9vw 9vw;
+  font-size: 1.1rem;
+  width: 85vw;
+  grid-template-columns: 7vw 24vw 9vw 9vw 9vw 9vw;
   border-bottom: 0.15rem solid #fff;
 }
 
@@ -97,18 +101,19 @@ margin-top: -4rem;
   color:#FFF;
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 90vw;
 }
 
 .row{
   text-align: center;
   padding: 1rem;
-  width: 90vw;
+  width: 85vw;
+  margin: 0.2rem 0rem;
   column-gap: 50px;
   font-family: 'Roboto',sans-serif;
   display: grid;
-  font-size: 1.1rem;
-  grid-template-columns: 9vw 27vw 9vw 9vw 9vw 9vw;
+  grid-template-columns: 7vw 24vw 9vw 9vw 9vw 9vw;
 }
 
 .row:nth-child(1){
@@ -118,6 +123,13 @@ margin-top: -4rem;
 
 .footer{
   height: 10vh;
+}
+
+.green{
+  background-color: rgba(54, 173, 54, 0.299);
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 1rem;
 }
 
 @media screen and (max-width: 425px) {

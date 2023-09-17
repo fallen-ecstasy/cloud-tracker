@@ -51,7 +51,7 @@ function App() {
           </div>
           <div className='dataRows'>
             {data.map((user,i)=>(
-              <div className='row'>
+              <div className={user.TotalCompletionsofbothPathways=="Yes"?'row green':'row'}>
               <span className='rank'>{i+1}</span>
               <span className='name'>{user.StudentName}</span>
               <span className='redeem'>{user.RedemptionStatus=="Yes"?"✅":"⚠️"}</span>
