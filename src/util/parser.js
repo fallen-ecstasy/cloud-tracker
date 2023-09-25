@@ -1,7 +1,7 @@
 import csvToJson from 'convert-csv-to-json';
 import fs from 'fs';
 
-let fileInputName = '22sep.csv'
+let fileInputName = '25sep.csv'
 let fileOutputName = 'data.json'
 
 const res = csvToJson.fieldDelimiter(',').supportQuotedField(true).getJsonFromCsv(fileInputName);
